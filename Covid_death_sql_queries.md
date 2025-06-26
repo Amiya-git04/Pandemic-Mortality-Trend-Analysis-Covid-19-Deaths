@@ -13,6 +13,7 @@ WHERE data_period_end = (
 ORDER BY COVID_deaths DESC;
 
 
+
 2.	Retrieve the top 5 jurisdictions with the highest % difference in aa_COVID_rate compared to the overall crude COVID rate:
 
 SELECT TOP 5 
@@ -25,6 +26,7 @@ WHERE data_period_end = (
     SELECT MAX(data_period_end) FROM DA_Data
 )
 ORDER BY pct_diff DESC;
+
 
 
 3.	Calculate the average COVID deaths per week for each jurisdiction residence and group, for the latest 4 data period end dates:
@@ -42,6 +44,7 @@ FROM DA_Data
 WHERE data_period_end IN (SELECT data_period_end FROM LatestPeriods)
 GROUP BY Jurisdiction_Residence, [Group];
 
+
 4.	Retrieve the data for the latest data period end date, but exclude any jurisdictions with zero deaths and missing values:
 
 SELECT *
@@ -54,6 +57,7 @@ AND Jurisdiction_Residence IS NOT NULL
 AND aa_COVID_rate IS NOT NULL
 AND crude_COVID_rate IS NOT NULL
 AND COVID_pct_of_total IS NOT NULL;
+
 
 
 5.	Calculate the week-over-week percentage change in COVID_pct_of_total for all jurisdictions and groups after March 1, 2020:
