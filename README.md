@@ -75,7 +75,7 @@ The interactive Power BI dashboard features:
 ## 📎 Case Study Presentation
 
 View the full walkthrough and insights here:  
-🔗 [Download Project PPT](https://github.com/Amiya-git04/Pandemic-Mortality-Trend-Analysis-Covid-19-Deaths/blob/main/Covid_deaths_presentation_case_study.pbix)
+🔗 [Download Project PPT](https://github.com/Amiya-git04/Pandemic-Mortality-Trend-Analysis-Covid-19-Deaths/blob/main/Covid_deaths_ppt.pptx)
 
 
 
